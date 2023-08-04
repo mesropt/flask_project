@@ -73,6 +73,7 @@
           <div class="collapse navbar-collapse" id="navbarToggle" style="justify-content: flex-end;">
             <!-- Navbar Right Side -->
             <div class="navbar-nav">
+                    <a class="nav-item nav-link navigation-links" href="{{url_for('main.home') }}"><i class="fa"></i>Главная</a>
                 {% if current_user.is_authenticated %}
                     <a class="nav-item nav-link navigation-links" href="{{url_for('users.account') }}"><i class="fa fa-user"></i>Профиль</a>
                     <a class="nav-item nav-link navigation-links" href="{{ url_for('posts.new_post') }}"><i class="fa fa-plus"></i>Новый пост</a>

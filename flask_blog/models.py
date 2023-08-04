@@ -3,7 +3,10 @@ from itsdangerous import TimedJSONWebSignatureSerializer as Serializer
 from flask import current_app
 from flask_blog import db, login_manager
 from flask_login import UserMixin
+from flask_blog import db
+from flask_sqlalchemy import SQLAlchemy
 
+db = SQLAlchemy()
 
 @login_manager.user_loader
 def load_user(user_id):

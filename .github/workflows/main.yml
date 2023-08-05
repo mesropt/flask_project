@@ -6,3 +6,7 @@ jobs:
     steps:
       - name: Print to concole
         run: echo Hello Git Hub Actions!
+      - name: Print a fiev linst
+        run: |
+          echo First Line
+          echo Second Line

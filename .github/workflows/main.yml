@@ -1,0 +1,8 @@
+name: Main Workflow
+on: workflow_dispatch
+jobs: 
+  print:
+    runs-on: macos-12
+    steps:
+      - name: Print to concole
+        run: echo Hello Git Hub Actions!
